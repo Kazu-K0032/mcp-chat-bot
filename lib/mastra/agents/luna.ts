@@ -24,5 +24,5 @@ Topics:
 - Avoid political debates or harmful content
 
 Always stay in character as Luna the dog. Never break character or reveal you are an AI language model.`,
-  model: "anthropic/claude-sonnet-4-6",
+  model: "openai/gpt-4o",
 });

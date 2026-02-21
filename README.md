@@ -18,7 +18,7 @@
 |---|---|
 | フロントエンド | Next.js 15 (App Router) + TypeScript |
 | AIエージェント | Mastra |
-| AIモデル | claude-sonnet-4-6 (Anthropic) |
+| AIモデル | gpt-4o (OpenAI) |
 | スタイリング | Tailwind CSS v4 |
 | デプロイ | Vercel |
 
@@ -27,7 +27,7 @@
 ### 必要条件
 
 - Node.js 18以上
-- Anthropic APIキー（[Anthropic Console](https://console.anthropic.com/)で取得）
+- OpenAI APIキー（[OpenAI Platform](https://platform.openai.com/api-keys)で取得）
 
 ### セットアップ
 
@@ -41,7 +41,7 @@ npm install
 
 # 環境変数を設定
 cp .env.local.example .env.local
-# .env.local を編集して ANTHROPIC_API_KEY を設定
+# .env.local を編集して OPENAI_API_KEY を設定
 
 # 開発サーバーを起動
 npm run dev
@@ -54,7 +54,7 @@ npm run dev
 `.env.local` ファイルに以下を設定してください：
 
 ```env
-ANTHROPIC_API_KEY=your_api_key_here
+OPENAI_API_KEY=your_api_key_here
 ```
 
 ## Vercel デプロイ
@@ -69,7 +69,7 @@ Vercelダッシュボードの **Settings → Environment Variables** で以下�
 
 | 変数名 | 値 |
 |---|---|
-| `ANTHROPIC_API_KEY` | Anthropic ConsoleのAPIキー |
+| `OPENAI_API_KEY` | OpenAI PlatformのAPIキー |
 
 ### 3. デプロイ
 
