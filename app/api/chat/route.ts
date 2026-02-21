@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import type { MessageInput } from "@mastra/core/agent/message-list";
 import { lunaAgent } from "@/lib/mastra/agents/luna";
 
+// Vercelのストリーミングタイムアウト設定（Hobbyプラン上限: 10秒、Proプラン: 300秒）
+export const maxDuration = 30;
+
 const MAX_MESSAGE_LENGTH = 2000;
 const MAX_MESSAGES = 100;
 
