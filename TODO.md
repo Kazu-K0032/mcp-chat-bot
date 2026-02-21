@@ -6,17 +6,17 @@
 
 ## Phase 1: プロジェクトセットアップ
 
-- [ ] **1-1.** Next.js 15 プロジェクトを作成する
+- [x] **1-1.** Next.js 15 プロジェクトを作成する
   ```bash
   npx create-next-app@latest . --typescript --tailwind --app --eslint --src-dir no --import-alias "@/*"
   ```
-- [ ] **1-2.** Mastra をインストールする
+- [x] **1-2.** Mastra をインストールする
   ```bash
   npm install @mastra/core @ai-sdk/anthropic
   ```
-- [ ] **1-3.** `.env.local` を作成し `ANTHROPIC_API_KEY` を設定する
-- [ ] **1-4.** `.gitignore` に `.env.local` が含まれていることを確認する
-- [ ] **1-5.** 不要なボイラープレート（`app/page.tsx` のデフォルト内容など）を削除する
+- [x] **1-3.** `.env.local` を作成し `ANTHROPIC_API_KEY` を設定する
+- [x] **1-4.** `.gitignore` に `.env.local` が含まれていることを確認する
+- [x] **1-5.** 不要なボイラープレート（`app/page.tsx` のデフォルト内容など）を削除する
 
 ---
 
