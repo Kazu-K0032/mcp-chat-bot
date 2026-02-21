@@ -84,6 +84,11 @@ export async function POST(req: Request) {
         for await (const chunk of agentStream.textStream) {
           controller.enqueue(encoder.encode(chunk));
         }
+      } catch {
+        // ストリーム中にエラーが発生した場合はエラーメッセージを送信
+        controller.enqueue(
+          encoder.encode("エラーが発生しただワン...もう一度試してワン！🐾")
+        );
       } finally {
         controller.close();
       }

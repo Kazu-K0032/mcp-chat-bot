@@ -60,6 +60,19 @@ export default function Home() {
           return updated;
         });
       }
+
+      // ストリーム正常終了後もコンテンツが空の場合はエラー表示
+      setMessages((prev) => {
+        const updated = [...prev];
+        const last = updated[updated.length - 1];
+        if (last.role === "assistant" && last.content === "") {
+          updated[updated.length - 1] = {
+            ...last,
+            content: "エラーが発生しただワン...もう一度試してワン！🐾",
+          };
+        }
+        return updated;
+      });
     } catch {
       setMessages((prev) => {
         const updated = [...prev];
